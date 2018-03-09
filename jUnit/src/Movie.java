@@ -7,10 +7,10 @@ public class Movie implements Serializable {
     private String age;
     private String description;
     private ArrayList<String> actors;
-    private int theater;
-    private int time;
+    private String theater;
+    private String time;
 
-    public Movie(String title, String instructor, String age, String description, ArrayList<String> actors, int theater, int time) {
+    public Movie(String title, String instructor, String age, String description, ArrayList<String> actors, String theater, String time) {
         this.title = title;
         this.instructor = instructor;
         this.age = age;
@@ -19,6 +19,23 @@ public class Movie implements Serializable {
         this.theater = theater;
         this.time = time;
     }
+
+    public String toString(){
+
+
+        String actorlist = "";
+
+        if (actors != null){
+            for (String actor : actors){
+                actorlist += actor + ", ";
+            }
+            actorlist = actorlist.substring(0, actorlist.length() - 2);
+        }
+
+        return "Movie title: " + title + " | Movie instructor: " + instructor + " | Minimum age: " + age + " | Movie description " + description + " | Theater: " + theater + "| Show Time: " + time + " | Actors: " + actorlist;
+    }
+
+
 
     public Movie(){
 
@@ -36,7 +53,7 @@ public class Movie implements Serializable {
         return instructor;
     }
 
-    public int getTime() {
+    public String getTime() {
         return time;
     }
 
@@ -48,7 +65,7 @@ public class Movie implements Serializable {
         return age;
     }
 
-    public int getTheater() {
+    public String getTheater() {
         return theater;
     }
 
@@ -60,7 +77,7 @@ public class Movie implements Serializable {
         this.instructor = instructor;
     }
 
-    public void setTime(int time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
@@ -72,7 +89,7 @@ public class Movie implements Serializable {
         this.age = age;
     }
 
-    public void setTheater(int theater) {
+    public void setTheater(String theater) {
         this.theater = theater;
     }
     public void setDescription(String description) {

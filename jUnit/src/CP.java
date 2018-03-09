@@ -2,6 +2,7 @@ import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class CP {
@@ -10,15 +11,9 @@ public class CP {
 
      public void controlPanel () throws IOException, ClassNotFoundException {
 
-
-
-
          Movie shows = new Movie();
          Database db = new Database();
-
-         Movie  movietest = (Movie) db.ois.readObject();
-         System.out.println(movietest);
-
+         List<Movie> movies = db.LoadMovies();
          System.out.println("Show title: ");
          shows.setTitle(noInput(sc.nextLine()));
          System.out.println("Show minimum age: ");
@@ -27,6 +22,10 @@ public class CP {
          shows.setDescription(noInput(sc.nextLine()));
          System.out.println("Input show instructor: ");
          shows.setInstructor(noInput(sc.nextLine()));
+         System.out.println("Show Time: ");
+         shows.setTime(noInput(sc.nextLine()));
+         System.out.println("Theater(1) or Theater(2): ");
+         shows.setTheater(noInput(sc.nextLine()));
          System.out.println("To stop type exit"); //TODO forklar bedre
          System.out.println("Input show actors: ");
          ArrayList<String> actors = new ArrayList<>();
@@ -46,6 +45,8 @@ public class CP {
              }
          }
 
+         shows.setActors(actors);
+
          System.out.println("Movie Information:");
          System.out.println("Title: " +  shows.getTitle());
          System.out.println("Age: " + shows.getAge());
@@ -61,14 +62,14 @@ public class CP {
          System.out.println("Type 2 for cancel and go back");
 
          if(sc.nextInt() == 1)
-         {
-             db.oos.writeObject(shows);
+         {  //System.out.println(shows);
+             db.SaveMovie(shows);
+             Login.Login();
          }
-         else{
-//Nothing
+         else if(sc.nextInt() == 2){
+             Login.Login();
          }
      }
-
      public String noInput(String input){
 
          while(input.equalsIgnoreCase(""))

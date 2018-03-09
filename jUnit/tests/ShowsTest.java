@@ -26,13 +26,13 @@ public class ShowsTest {
 
 
         shows.setAge("15");
-        shows.setTime(190);
+        shows.setTime("190");
         shows.setInstructor("Patrick Klæbel");
         shows.setDescription("Arvid spiser æble");
 
 
         assertEquals("15",shows.getAge());
-        assertEquals(190, shows.getTime());
+        assertEquals("190", shows.getTime());
         assertEquals("Arvid spiser æble", shows.getDescription());
         assertEquals("Patrick Klæbel", shows.getInstructor());
         assertEquals("Patrick Klubel", Arvid.get(2));
