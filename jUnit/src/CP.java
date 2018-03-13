@@ -13,9 +13,11 @@ public class CP {
 
          Movie shows = new Movie();
          Database db = new Database();
+         Theater theater = new Theater();
          List<Movie> movies = db.LoadMovies();
          System.out.println("Show title: ");
          shows.setTitle(noInput(sc.nextLine()));
+         theater.setMovieName(shows.getTitle());
          System.out.println("Show minimum age: ");
          shows.setAge(noInput(sc.nextLine()));
          System.out.println("Show description: ");
@@ -24,9 +26,10 @@ public class CP {
          shows.setInstructor(noInput(sc.nextLine()));
          System.out.println("Show Time: ");
          shows.setTime(noInput(sc.nextLine()));
-         System.out.println("Theater(1) or Theater(2): ");
+         System.out.println("saveTheater(1) or saveTheater(2): ");
          shows.setTheater(noInput(sc.nextLine()));
-         System.out.println("To stop type exit"); //TODO forklar bedre
+         theater.setWhichTeater(Integer.parseInt(shows.getTheater()));
+         System.out.println("To stop type exit");
          System.out.println("Input show actors: ");
          ArrayList<String> actors = new ArrayList<>();
 
@@ -64,6 +67,7 @@ public class CP {
          if(sc.nextInt() == 1)
          {  //System.out.println(shows);
              db.SaveMovie(shows);
+             db.SaveTheaters(theater);
              Login.Login();
          }
          else if(sc.nextInt() == 2){

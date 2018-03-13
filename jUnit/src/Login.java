@@ -1,3 +1,5 @@
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Random;
@@ -14,16 +16,22 @@ public class Login {
         String choice = l.nextLine();
         if(choice.equals("1")){
             System.out.print("Type in your username: ");
-            run(l.nextLine());
+            String username = l.nextLine();
+            run(username);
             Database db = new Database();
             List<Movie> movies = db.LoadMovies();
+            int x;
 
-            for(int x = 0; x < movies.size(); x++){
+            for(x = 0; x < movies.size(); x++){
 
-                System.out.println("Movie -> " + movies.get(x));
+                System.out.println(x+1 + ". Movie -> " + movies.get(x));
 
             }
-            Login();
+            System.out.print("Which movie would you like to watch?: ");
+            String answer = l.nextLine();
+            int answer1 = Integer.parseInt(answer)-1;
+            Movie movie = movies.get(answer1);
+            BS.seatMenu(username, movie, answer1);
         }else if(choice.equals("2")){
             CP cp = new CP();
             cp.controlPanel();

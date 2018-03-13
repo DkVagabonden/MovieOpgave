@@ -32,7 +32,7 @@ public class Movie implements Serializable {
             actorlist = actorlist.substring(0, actorlist.length() - 2);
         }
 
-        return "Movie title: " + title + " | Movie instructor: " + instructor + " | Minimum age: " + age + " | Movie description " + description + " | Theater: " + theater + "| Show Time: " + time + " | Actors: " + actorlist;
+        return "Movie title: " + title + " | Movie instructor: " + instructor + " | Minimum age: " + age + " | Movie description " + description + " | saveTheater: " + theater + " | Show Time: " + time + " | Actors: " + actorlist;
     }
 
 
