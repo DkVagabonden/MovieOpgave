@@ -10,6 +10,7 @@ public class Database{
     List<Manager> managers;
     List<Movie> movies;
     List<Theater> theaters;
+    List<User> users;
 
 
     public Database()  {
@@ -17,10 +18,8 @@ public class Database{
     managers = new ArrayList<Manager>();
     theaters = new ArrayList<>();
     movies = new ArrayList<Movie>();
+    users = new ArrayList<>();
    LoadMovies();
-
-
-
     }
 
     public void SaveMovie(Movie movie) {
@@ -33,7 +32,6 @@ public class Database{
             oos.close();
             out.close();
         } catch(Exception e){
-
         }
     }
 
@@ -93,10 +91,34 @@ public class Database{
         }
 
         return theaters;
-
     }
 
+    public List<User> LoadUsers() {
+        try {
+            FileInputStream in = new FileInputStream("user_database.dat");
+            ObjectInputStream ois = new ObjectInputStream(in);
+            this.users = (ArrayList)ois.readObject();
+            System.out.println();
+            in.close();
+            ois.close();
+        } catch (Exception var3) {
+            System.out.println(var3 + " Der gik noget galt");
+        }
+        return this.users;
+    }
 
+    public void SaveUser(User user) {
+        try {
+            FileOutputStream out = new FileOutputStream("user_database.dat");
+            ObjectOutputStream oos = new ObjectOutputStream(out);
+            this.users.add(user);
+            oos.writeObject(this.users);
+            oos.close();
+            out.close();
+        } catch (Exception var4) {
+            ;
+        }
 
+    }
 }
 

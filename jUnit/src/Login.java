@@ -8,6 +8,41 @@ import java.util.Scanner;
 public class Login {
     public static int lastnumber = 0;
 
+    public static void userlogin() throws IOException, ClassNotFoundException {
+        Scanner l = new Scanner(System.in);
+        Database db = new Database();
+        User activeUser = null;
+
+        System.out.println("Type in your username");
+        String username = l.nextLine();
+
+        for (User user : db.LoadUsers()){
+            if (username.equals(user.getUserName())){
+                activeUser = user;
+                break;
+            }
+        }
+        if (activeUser != null){
+
+            System.out.println("Type in your password:");
+            String password = l.nextLine();
+
+            if (password.equals(activeUser.getPassword())){
+                System.out.println("Access granted");
+                String type = activeUser.getType();
+                System.out.println("You are a " + type);
+                CP cp = new CP();
+                cp.controlPanel();
+            } else {
+                System.out.println("Wrong password. Try again");
+                userlogin();
+            }
+        } else {
+            System.out.println("Wrong username. Try again");
+            userlogin();
+        }
+    }
+
     public static void Login() throws IOException, ClassNotFoundException{
 
 
@@ -33,8 +68,7 @@ public class Login {
             Movie movie = movies.get(answer1);
             BS.seatMenu(username, movie, answer1);
         }else if(choice.equals("2")){
-            CP cp = new CP();
-            cp.controlPanel();
+            userlogin();
         }else{
             System.out.println("Please type in a number between 1 and 2");
             Login();
