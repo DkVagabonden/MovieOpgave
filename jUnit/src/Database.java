@@ -4,10 +4,6 @@ import java.util.List;
 
 public class Database{
 
-    // (String title, String instructor, int time, ArrayList<String> actors, int age, int theater
-
-
-    List<Manager> managers;
     List<Movie> movies;
     List<Theater> theaters;
     List<User> users;
@@ -15,7 +11,6 @@ public class Database{
 
     public Database()  {
 
-    managers = new ArrayList<Manager>();
     theaters = new ArrayList<>();
     movies = new ArrayList<Movie>();
     users = new ArrayList<>();

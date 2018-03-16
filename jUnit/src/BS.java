@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 public class BS {
     //Global Varaiabler.
+
     public static int theaterRows1 = 25, theaterSeats1 = 16;
     public static int theaterRows2 = 20, theaterSeats2 = 12;
 

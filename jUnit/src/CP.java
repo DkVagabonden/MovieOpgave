@@ -1,4 +1,10 @@
-import com.sun.org.apache.xpath.internal.SourceTree;
+/**
+ * The CP(controlPanel) class displays the control panel for user and administration
+ *
+ * @author  Pair Programming(alle)
+ * @version 1.0
+ * @since   16-03-2018
+ */
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,6 +15,12 @@ public class CP {
 
     Scanner sc = new Scanner(System.in);
 
+    /**
+     * The controlPanel method displays the information for creating a new movie
+     * and saves the movie object to the database
+     * @throws IOException Because of file used.
+     * @throws ClassNotFoundException if the file is not found.
+     */
      public void controlPanel () throws IOException, ClassNotFoundException {
 
          Movie shows = new Movie();
@@ -74,6 +86,12 @@ public class CP {
              Login.Login();
          }
      }
+
+    /**
+     * The noInput method happens if the user types something incorrect.
+     * @param input This is typed input
+     * @return a warning message or the typed input
+     */
      public String noInput(String input){
 
          while(input.equalsIgnoreCase(""))
