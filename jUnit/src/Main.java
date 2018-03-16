@@ -5,7 +5,6 @@
  * @version 1.0
  * @since   16-03-2018
  */
-
 import java.io.IOException;
 
 public class Main {
@@ -22,8 +21,6 @@ public class Main {
             user.setPassword("p");
             user.setType("Admin");
             user.setUserName("Patrick");
-
             login.Login();
-
     }
 }

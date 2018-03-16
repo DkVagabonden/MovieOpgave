@@ -1,4 +1,10 @@
-import com.sun.org.apache.xpath.internal.SourceTree;
+/**
+ * The Login class does the login stuff and random colors
+ *
+ * @author  Pair Programming(alle)
+ * @version 1.0
+ * @since   16-03-2018
+ */
 
 import java.io.IOException;
 import java.util.List;
@@ -8,7 +14,12 @@ import java.util.Scanner;
 public class Login {
     public static int lastnumber = 0;
 
-    public static void userlogin() throws IOException, ClassNotFoundException {
+    /**
+     * The userLogin method lets sthe user type in their username and find the user with that password.
+     * @throws IOException Because of file used.
+     * @throws ClassNotFoundException if the file is not found.
+     */
+    public static void userLogin() throws IOException, ClassNotFoundException {
         Scanner l = new Scanner(System.in);
         Database db = new Database();
         User activeUser = null;
@@ -23,7 +34,6 @@ public class Login {
             }
         }
         if (activeUser != null){
-
             System.out.println("Type in your password:");
             String password = l.nextLine();
 
@@ -35,14 +45,19 @@ public class Login {
                 cp.controlPanel();
             } else {
                 System.out.println("Wrong password. Try again");
-                userlogin();
+                userLogin();
             }
         } else {
             System.out.println("Wrong username. Try again");
-            userlogin();
+            userLogin();
         }
     }
-
+    /**
+     * The login method is the first method to be shown in the program
+     * accepts the different options that the customer have.
+     * @throws IOException Because of file used.
+     * @throws ClassNotFoundException if the file is not found.
+     */
     public static void Login() throws IOException, ClassNotFoundException{
 
 
@@ -68,12 +83,17 @@ public class Login {
             Movie movie = movies.get(answer1);
             BS.seatMenu(username, movie, answer1);
         }else if(choice.equals("2")){
-            userlogin();
+            userLogin();
         }else{
             System.out.println("Please type in a number between 1 and 2");
             Login();
         }
     }
+
+    /**
+     * The run method shows the welcome messeage and the username in rainbow colors.
+     * @param user This is the inputted username
+     */
     public static void run(String user){
         System.out.println(ConsoleColors.YELLOW + "*    *   *     *       *       *       *" + ConsoleColors.RESET);
         System.out.print(
@@ -89,6 +109,12 @@ public class Login {
         System.out.println("");
         System.out.println(ConsoleColors.YELLOW + "*    *   *     *       *       *       *" + ConsoleColors.RESET);
     }
+
+
+    /**
+     * The randomColors method turns a String into rainbow colors
+     * @param input The typed in username
+     */
     public static void randomColors(String input){
 
         for(int i = 0; i<input.length(); i++)

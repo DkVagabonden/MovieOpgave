@@ -59,13 +59,10 @@
       <change beforePath="$PROJECT_DIR$/../docs/package-tree.html" afterPath="$PROJECT_DIR$/../docs/package-tree.html" />
       <change beforePath="$PROJECT_DIR$/../docs/package-use.html" afterPath="$PROJECT_DIR$/../docs/package-use.html" />
       <change beforePath="$PROJECT_DIR$/../docs/serialized-form.html" afterPath="$PROJECT_DIR$/../docs/serialized-form.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/BS.java" afterPath="$PROJECT_DIR$/src/BS.java" />
-      <change beforePath="$PROJECT_DIR$/src/CP.java" afterPath="$PROJECT_DIR$/src/CP.java" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleColors.java" afterPath="$PROJECT_DIR$/src/ConsoleColors.java" />
-      <change beforePath="$PROJECT_DIR$/src/Database.java" afterPath="$PROJECT_DIR$/src/Database.java" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" afterPath="$PROJECT_DIR$/src/Login.java" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/Manager.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,15 +101,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Login.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1843">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="683">
+              <caret line="94" column="48" lean-forward="false" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
               <folding>
+                <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="method#run#0;class#Login#0" expanded="false" />
-                <element signature="method#randomColors#0;class#Login#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -213,8 +209,8 @@
       <file leaf-file-name="BS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="28" column="7" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="28" selection-end-column="7" />
+            <state relative-caret-position="616">
+              <caret line="28" column="7" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="28" selection-end-column="7" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -233,11 +229,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            <state relative-caret-position="363">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="63" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -264,8 +260,8 @@
       <find>getSeatsMenu</find>
       <find>seatMenu</find>
       <find>saveTheater</find>
-      <find>retun</find>
       <find>SaveTheaters</find>
+      <find>retun</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -292,12 +288,12 @@
         <option value="$PROJECT_DIR$/src/BoolArray.java" />
         <option value="$PROJECT_DIR$/src/Theater.java" />
         <option value="$PROJECT_DIR$/src/User.java" />
-        <option value="$PROJECT_DIR$/src/Login.java" />
         <option value="$PROJECT_DIR$/src/BS.java" />
         <option value="$PROJECT_DIR$/src/ConsoleColors.java" />
         <option value="$PROJECT_DIR$/src/CP.java" />
         <option value="$PROJECT_DIR$/src/Database.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Login.java" />
       </list>
     </option>
   </component>
@@ -553,7 +549,7 @@
       <workItem from="1520331551715" duration="1426000" />
       <workItem from="1520333890121" duration="2384000" />
       <workItem from="1520581177962" duration="3458000" />
-      <workItem from="1520928460119" duration="12210000" />
+      <workItem from="1520928460119" duration="12678000" />
     </task>
     <task id="LOCAL-00001" summary="edit and fixes">
       <created>1520332915200</created>
@@ -598,7 +594,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41153000" />
+    <option name="totallyTimeSpent" value="41621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -757,9 +753,8 @@
         <state relative-caret-position="63">
           <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#Login#0" expanded="false" />
-            <element signature="method#randomColors#0;class#Login#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -852,9 +847,8 @@
         <state relative-caret-position="63">
           <caret line="5" column="73" lean-forward="false" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
           <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#Login#0" expanded="false" />
-            <element signature="method#randomColors#0;class#Login#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1038,29 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#Login#0" expanded="false" />
-            <element signature="method#randomColors#0;class#Login#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="28" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -1078,16 +1049,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1153,12 +1114,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        <state relative-caret-position="200">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="28" selection-end-column="7" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="63" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="94" column="48" lean-forward="false" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
